@@ -1,0 +1,21 @@
+{
+  "name": "riafy-challenge",
+  "version": "1.0.0",
+  "description": "node js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm build --prefix Frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
